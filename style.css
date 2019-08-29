@@ -18,7 +18,8 @@
 
   .home-container {
     display: flex;
-    justify-content: space-between;
+    top: 50px;
+    height: 90%;
   }
 
   .sr-only {
@@ -64,7 +65,7 @@
     height: auto;
     width: 50px;
     padding: 10px;
-    top: 75%;
+    top: 70%;
     right:0;
     z-index: 100;
     border-top-left-radius: 10px;
