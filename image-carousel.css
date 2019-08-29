@@ -1,0 +1,37 @@
+/* styling for image carousel */
+
+<style>
+
+  .carousel-container {
+    align-self: flex-end;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 600px;
+    width: 400px;
+  }
+
+  .carousel {
+    display: flex;
+    width: 100%;
+  }
+
+  .carousel-pic {
+  }
+
+  .carousel-left {
+    position: absolute;
+    color: gold;
+    font-size: 4em;
+    top: 50%;
+    left: 20px;
+  }
+
+  .carousel-right {
+    position: absolute;
+    color: gold;
+    font-size: 4em;
+    top: 50%;
+    right: 20px;
+  }
+
+</style>

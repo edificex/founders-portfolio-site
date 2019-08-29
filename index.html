@@ -5,8 +5,10 @@
 	<head>
 		<title>Dan Goss: Portfolio for Founders &amp Coders Application - Winter 2019</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="image-carousel.css">
 		<link rel="icon" href="favicon.ico">
 		<script type = "text/javascript" async="async" src="script.js"></script>
+		<script type = "text/javascript" async="async" src="image-carousel.js"></script>
 		<script src="https://kit.fontawesome.com/36593718b0.js"></script>
 		<meta charset="UTF-8">
 		<meta name="keywords" content="HTML, CSS, JavaScript, Founders and Coders, Codewars, Dan Goss, portfolio, plasticneuron">
@@ -16,7 +18,8 @@
 
 	<body>
 
-		<nav id="nav-bar" class="nav-bar">
+		<div>
+			<nav id="nav-bar" class="nav-bar">
 			<a tabindex="1" title="Home" class="nav-link">HOME</a>
 			<a tabindex="1" title="Who am I?" class="nav-link">WHO AM I?</a>
 			<a tabindex="1" title="Why apply?" class="nav-link">WHY APPLY?</a>
@@ -25,6 +28,7 @@
 				<i tabindex="1" id="wizard" class="fas fa-hat-wizard nav-link" onclick="magicHat()"></i>
 			</div>
 		</nav>
+		</div>
 
 		<div id="portfolio-bar" class="portfolio-bar">
 			<a title="freeCodeCamp profile" href="https://www.freecodecamp.org/plasticneuron">
@@ -38,16 +42,29 @@
 			</a>
 		</div>
 
-
-		<main>
-			<img id="banner" src="./img/lasthouse.jpg">
-			<h1>Hi I'm Dan Goss</h1>
-			<p>Short bio of me</p>
-			<h2>Why I'm applying to Founders & Coders</h2>
-			<h3>To Learn</h3>
-			<h3>To Collaborate and Co-operate</h3>
-			<h3>To Share</h3>
+		<div name="home" class="home-container">
+			<main>
+				<h1>Hi I'm Dan Goss</h1>
+				<p>Short bio of me</p>
+				<h2>Why I'm applying to Founders & Coders</h2>
+				<h3>To Learn</h3>
+				<h3>To Collaborate and Co-operate</h3>
+				<h3>To Share</h3>
 			</main>
+
+			<div id="carousel-container" class="carousel-container">
+				<div id="carousel" class="carousel">
+					<img id="prof1" class="carousel-pic" src="./img/profile1.jpg">
+					<img id="prof2" class="carousel-pic" src="./img/profile2.jpg">
+					<img id="prof3" class="carousel-pic" src="./img/profile3.jpg">
+					<img id="prof4" class="carousel-pic" src="./img/profile4.jpg">
+					<button class="carousel-left"><i class="fas fa-arrow-circle-left"></i></button>
+					<button class="carousel-right"><i class="fas fa-arrow-circle-right"></i></button>
+				</div>
+			</div>
+		</div>
+
+		<!--
 
 		<section>
 			<h2>Infosecurity and data privacy</h2>
@@ -78,6 +95,8 @@
 		<section>
 			<h2>Experimental features</h2>
 		<section>
+
+		-->
 
 	</body>
 
