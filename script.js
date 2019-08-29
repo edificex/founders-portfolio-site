@@ -40,6 +40,8 @@ var navPopReset = function(e) {
 }
 addEventListener('mouseover', navPop);
 addEventListener('mouseout', navPopReset);
+addEventListener('focus', navPop, true); // focus/blur do not bubble
+addEventListener('blur', navPopReset, true);
 
 // invert colours on portfolio bar on mouseover
 var invert = function(e) {
@@ -73,6 +75,9 @@ var invertReset = function(e) {
 }
 addEventListener('mouseover', invert);
 addEventListener('mouseout', invertReset);
+addEventListener('mouseout', navPopReset);
+addEventListener('focus', invert, true);
+addEventListener('blur', invertReset, true);
 
 // make wizard hat change colour according to user input
 let trip = false; // global variable to feed into navPop functions
