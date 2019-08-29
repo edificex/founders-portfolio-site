@@ -7,7 +7,7 @@ let degree = () => Math.floor(Math.random() * 360);
 let cent = () =>  Math.floor(Math.random() * 100);
 // e.g. wiz.style.color = hsl(degree(),cent()+'%',cent()+'%')
 
-// invert colours and change size of menu options on mouseover
+// invert colours and change size of menu options on mouseover/focus
 var navPop = function(e) {
   let nav = document.getElementById('nav-bar');
   let wiz = document.getElementById('wizard');
