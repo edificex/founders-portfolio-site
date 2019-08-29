@@ -3,35 +3,44 @@
 <style>
 
   .carousel-container {
-    align-self: flex-end;
+    position: relative;
     box-sizing: border-box;
     overflow: hidden;
-    height: 600px;
+    margin: auto;
     width: 400px;
+    height: 600px;
   }
 
   .carousel {
+    position: relative;
     display: flex;
-    width: 100%;
+    width: auto;
+
   }
 
   .carousel-pic {
+    position: relative;
+    z-index: 50;
   }
 
   .carousel-left {
+    opacity:0.2;
     position: absolute;
     color: gold;
     font-size: 4em;
-    top: 50%;
-    left: 20px;
+    height: 100%;
+    left: 0px;
+    z-index: 90;
   }
 
   .carousel-right {
+    opacity: 0.2;
     position: absolute;
     color: gold;
     font-size: 4em;
-    top: 50%;
-    right: 20px;
+    height: 100%;
+    right: 0px;
+    z-index: 90;
   }
 
 </style>

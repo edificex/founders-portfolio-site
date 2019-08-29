@@ -3,7 +3,7 @@
 <style>
 
   body {
-
+     
   }
 
   h1 {
@@ -13,14 +13,18 @@
   }
 
   main {
-    align-self: flex-start;
+
   }
 
-  .home-container {
-    display: flex;
-    top: 50px;
+  /* .home-container {
+    display:grid;
+    grid-template: 2fr 1fr;
+    position: relative;
+    margin: auto;
+    height: auto;
+    top: 80px;
     height: 90%;
-  }
+  } */
 
   .sr-only {
     position: absolute;
