@@ -2,10 +2,23 @@
 
 <style>
 
+  body {
+    background-color: HotPink;
+  }
+
   h1 {
     font-size: 100px;
     font-weight: bold;
     color: HotPink;
+  }
+
+  .sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
   }
 
   .nav-bar {
@@ -53,13 +66,8 @@
     padding: 5px;
   }
 
-  .sr-only {
-    position: absolute;
-    left: -10000px;
-    width: 1px;
-    height: 1px;
-    top: auto;
-    overflow: hidden;
+  .carousel-shell {
+
   }
 
 </style>
