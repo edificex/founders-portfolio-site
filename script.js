@@ -120,3 +120,5 @@ const profileFlick = function(event) {
 } */
 addEventListener('click',profileFlick);
 // addEventListener('mouseover',profileFlip);
+
+// make buttons in bio reveal appropriate article
