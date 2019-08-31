@@ -3,7 +3,7 @@
 .slider {
   padding: 20px 0;
   position: relative; /* set relative so descendants with position: absolute refer to overall container */
-  height: 800px;
+  height: 80%;
   width: 80%;
   margin: 10px auto;
 }

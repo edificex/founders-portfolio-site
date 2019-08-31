@@ -6,6 +6,7 @@
 		<title>Dan Goss: Portfolio for Founders &amp Coders Application - Winter 2019</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="img-carousel.css">
+		<link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
 		<link rel="icon" href="favicon.ico">
 		<script src="https://kit.fontawesome.com/36593718b0.js"></script>
 		<script type = "text/javascript" async="async" src="script.js"></script>
@@ -19,13 +20,13 @@
 	<body class="background">
 
 		<!-- this div just accounts for the navigation bar being outside flow -->
-		<div class="nav-box"></div>
+		<div id="home" class="nav-box"></div>
 
 		<nav class="nav">
-			<a tabindex="1" title="Home" class="nav__link">HOME</a>
-			<a tabindex="1" title="Who am I?" class="nav__link">WHO AM I?</a>
-			<a tabindex="1" title="Why apply?" class="nav__link">WHY APPLY?</a>
-			<a tabindex="1" title="Projects &amp Experiments"class="nav__link">PROJECTS &amp EXPERIMENTS</a>
+			<a tabindex="1" title="Home" class="fas fa-home nav__link" href="#home"></a>
+			<a tabindex="1" title="Who am I?" class="nav__link" href="#bio">Who am I?</a>
+			<a tabindex="1" title="Why apply?" class="nav__link" href="#motivation">Why apply?</a>
+			<a tabindex="1" title="Projects &amp Experiments"class="nav__link" href="#projects">Projects &amp Experiments</a>
 			<i tabindex="1" id="wizard" class="fas fa-hat-wizard nav__link" onclick="magicHat()"></i>
 		</nav>
 
@@ -39,7 +40,7 @@
 			<a tabindex="-1" title="GitHub profile" href="https://github.com/plasticneuron">
 				<i tabindex="1" class="fab fa-github portfolio__link"></i>
 			</a>
-			<a tabindex="-1" title="Email me" href="mailto:dangoss@posteo.net">
+			<a tabindex="-1" title="Email me: dangoss@posteo.net" href="mailto:dangoss@posteo.net">
 				<i tabindex="1" class="fas fa-envelope portfolio__link"></i>
 			</a>
 		</div>
@@ -49,13 +50,13 @@
         <button class="fas fa-arrow-alt-circle-left slider__button slider__button--left"></button>
         <ul class="slider__list">
           <li class="slider__list-item">
-            <img src="img/img1.jpg" alt="Photo by Hu Chen on Unsplash" class="slider__img slider__img--active">
+            <img src="img/img1.jpg" alt="At Land's End" class="slider__img slider__img--active">
           </li>
           <li class="slider__list-item">
-            <img hidden src="img/img2.jpg" alt="Photo by Robert Baker on Unsplash" class="slider__img">
+            <img hidden src="img/img2.jpg" alt="Meeting folks at the Centre for Environmental Concerns in Manila" class="slider__img">
           </li>
           <li class="slider__list-item">
-            <img hidden src="img/img3.jpg" alt="Photo by Cindy Chen on Unsplash" class="slider__img">
+            <img hidden src="img/img3.jpg" alt="By the canal in Venice" class="slider__img">
           </li>
         </ul>
         <button class="fas fa-arrow-alt-circle-right slider__button slider__button--right"></button>
@@ -67,48 +68,43 @@
       </div>
     </div>
 
-		<main>
+		<main id="bio">
 			<h1>Hi I'm Dan Goss</h1>
 			<p>Short bio of me</p>
-			<h2>Why I'm applying to Founders & Coders</h2>
-			<h3>To Learn</h3>
-			<h3>To Collaborate and Co-operate</h3>
-			<h3>To Share</h3>
 		</main>
 
-		<!--
+		<article id="motivation">
+			<h2>My motivation for applying to Founders & Coders</h2>
+			<h3>To Learn</h3>
+			<h3>To Co-operate, Reciprocate</h3>
+			<h3>To Build Resources for the Left</h3>
+		</article>
 
-		<section>
+		<article>
 			<h2>Infosecurity and data privacy</h2>
 			<h3>Festival workshops</h3>
 			<h3>The Glass Room</h3>
-		</section>
+		</article>
 
-		<section>
+		<article>
 			<h2>Union organising</h2>
 			<h3>IWW and the Castle</h3>
 			<h3>London Renters' Union</h3>
-		</section>
+		</article>
 
-		<section>
+		<article>
 			<h2>Environmental activism</h2>
 			<h3>Fossil Free campaigning, divestment and People & Planet</h3>
 			<h3>Fuel Poverty Action</h3>
-		</section>
+		</article>
 
-		<section>
+		<article>
 			<h2>Climbing</h2>
-		</section>
+		</article>
 
-		<section>
-			<h2>Project imaginarium</h2>
-		</section>
-
-		<section>
-			<h2>Experimental features</h2>
-		<section>
-
-		-->
+		<article id="projects">
+			<h2>Projects &amp Experiments</h2>
+		</article>
 
 		<footer>
 			Licensing info etc.

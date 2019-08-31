@@ -5,7 +5,8 @@
   }
 
   .nav-box {
-    height: 5%;
+    height: 50px;
+    padding: 10px 0;
   }
 
   .sr-only {
@@ -26,18 +27,23 @@
     align-items: center;
     background-color: gold;
     padding: 10px;
-    height: 5%;
+    height: 50px;
     width: 100%;
     left:0;
     top: 0;
     z-index: 100;
   }
 
+  .nav a {
+    text-decoration: none; /* remove underlining of nav links */
+  }
+
   .nav__link {
     color: black;
-    font-size: 2em;
-    font-weight: bolder;
-    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 1.75em; /* NB. 1em * 16 gives font-size in pixels, so 1.75em = 28px */
+    font-weight: bold;
+    font-family: 'Nova Mono', monospace; /* use generic monospace if GFont 'Nova Mono' not supported */
   }
 
   .portfolio {
