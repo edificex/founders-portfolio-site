@@ -20,7 +20,7 @@
 
 .slider__button {
   position: absolute; /* buttons will be positioned relative to shell */
-  font-size: 3em; /* style the font awesome arrows */
+  font-size: 4em; /* style the font awesome arrows */
   color: gold;
   background-color: transparent; /* lose the <button> look */
   border: 0;
