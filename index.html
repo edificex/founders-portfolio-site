@@ -23,29 +23,32 @@
 		<!-- this div just accounts for the navigation bar being outside flow -->
 		<div id="home" class="nav-box"></div>
 
+		<!-- the main navigation bar -->
 		<nav class="nav">
-			<a tabindex="1" title="Home" class="fas fa-home nav__link" href="#home" ></a>
+			<a tabindex="1" title="Home" class="nav__link" href="#home"><i class="fas fa-home"></i> Home</a>
 			<a tabindex="1" title="Who am I?" class="nav__link" href="#bio">Who am I?</a>
 			<a tabindex="1" title="Why apply?" class="nav__link" href="#motivation">Why apply?</a>
-			<a tabindex="1" title="Projects &amp Experiments"class="nav__link" href="#projects">Projects &amp Experiments</a>
+			<a tabindex="1" title="Projects &amp experiments"class="nav__link" href="#projects">Projects &amp Experiments</a>
 			<i tabindex="1" id="wizard" class="fas fa-hat-wizard nav__link" onclick="magicHat()"></i>
 		</nav>
 
+		<!-- side bar containing links to essential profiles and to email me -->
 		<div class="portfolio">
-			<a tabindex="-1" title="GitHub profile" target="_blank" href="https://github.com/plasticneuron">
+			<a tabindex="-1" title="my GitHub profile" target="_blank" href="https://github.com/plasticneuron">
 				<i tabindex="1" class="fab fa-github portfolio__link"></i>
 			</a>
-			<a tabindex="-1" title="freeCodeCamp profile" target="_blank" href="https://www.freecodecamp.org/plasticneuron">
+			<a tabindex="-1" title="my freeCodeCamp profile" target="_blank" href="https://www.freecodecamp.org/plasticneuron">
 				<i tabindex="1" class="fab fa-free-code-camp portfolio__link"></i>
 			</a>
-			<a tabindex="-1" title="Codewars profile" target="_blank" href="https://www.codewars.com/users/plasticneuron">
+			<a tabindex="-1" title="my Codewars profile" target="_blank" href="https://www.codewars.com/users/plasticneuron">
 				<img tabindex="1" id="codewars" class = "portfolio__link" src="img/codewars-logo-gold.png" width="50px">
 			</a>
-			<a tabindex="-1" title="Email me: dangoss@posteo.net" href="mailto:dangoss@posteo.net">
+			<a tabindex="-1" title="email me: dangoss@posteo.net" href="mailto:dangoss@posteo.net">
 				<i tabindex="1" class="fas fa-envelope portfolio__link"></i>
 			</a>
 		</div>
 
+		<!-- the much feted image carousel -->
 		<div class="slider">
       <div class="slider__shell">
         <button class="fas fa-arrow-alt-circle-left slider__button slider__button--left"></button>
@@ -69,12 +72,28 @@
       </div>
     </div>
 
+		<!-- an introduction to me, myself and I -->
 		<main class="main" id="bio">
-			<div class="main__text">
-				<h1 class="main__heading">Hi I'm Dan Goss</h1>
-				<p class="main__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat tristique mauris vestibulum efficitur. Aliquam sit amet volutpat ipsum. Aenean pulvinar ultrices purus non lacinia. Sed sodales justo sed risus euismod, at ultricies lorem cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales ipsum non est facilisis, ut convallis mi tincidunt. Suspendisse sodales dolor sed eros volutpat, non interdum diam dapibus. In maximus porta libero non mattis. Suspendisse varius quis tortor a tempor. Donec faucibus nulla eu gravida efficitur. Integer pretium sapien et velit placerat, non viverra mauris hendrerit. Nunc faucibus erat a ornare congue. Curabitur sem neque, varius ut ex sed, venenatis commodo arcu. Nulla egestas magna ligula, sit amet sollicitudin tellus vehicula at. e</p>
+			<div class="main__text"> <!-- this div is the firt column of the CSS grid -->
+				<h1 class="main__heading">Hi, my name is Dan</h1>
+				<p class="main__para">Listicles seem to be the height of fashion, so here are five fast facts about me:</p>
+				<ol class="main__list">
+					<li>I've been hanging around on this particular turtle for about 25 years</li>
+					<li>I grew up in east London, but have made my home for the past few years in Haringey, north London</li>
+					<li>I get coin by working as a receptionist at a rock climbing centre down Green Lanes</li>
+					<li>I like to read speculative sci-fi, play the drums, go to dance parties and tinker with tech</li>
+					<li>I've been involved in left wing political organising for many years and believe <em>another world is possible</em></li>
+				</ol>
+				<p class="main__para">So that's a quick rundown. If you'd like to know more about what I do with my time, just click a button!</p>
+				<p class="main__para">Or, skip straight to the next section to <a class="link" href="#motivation">find out why I'm applying</a>.</p>
+				<div class="main__buttons">
+					<button>Infosecurity</button>
+					<button>Union Organising</button>
+					<button>Environmental Action</button>
+					<button>Climbing</button>
+				</div>
 			</div>
-			<img src="img/profile2.jpg" alt="My face" class="main__img">
+			<img src="img/profile2.jpg" alt="My face" class="main__img"> <!-- this img is the second column of the CSS grid -->
 		</main>
 
 		<article id="motivation" class="article">
@@ -120,7 +139,8 @@
 
 		<div class="footer-box">
 			<footer class="footer">
-				<p class="footer__para">See the <a href="https://github.com/plasticneuron/plasticneuron.github.io">code for this page</a> on GitHub</p>
+				<p class="footer__para">See the <a target="_blank" class="link" href="https://github.com/plasticneuron/plasticneuron.github.io">code for this page</a> on GitHub</p>
+				<i class="fas fa-infinity"></i>
 				<p class="footer__para">Dan Goss 2019</p>
 			</footer>
 		</div>
