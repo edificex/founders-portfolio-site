@@ -9,9 +9,9 @@ let cent = () =>  Math.floor(Math.random() * 100);
 
 // invert colours and change size of menu options on mouseover/focus
 var navPop = function(e) {
-  let nav = document.getElementById('nav-bar');
+  let nav = document.querySelector('.nav');
   let wiz = document.getElementById('wizard');
-  let links = Array.from(document.getElementsByClassName('nav-link'));
+  let links = Array.from(document.getElementsByClassName('nav__link'));
   if (links.includes(e.target)) {
     if (e.target == wiz && trip > 0) {
       e.target.style.fontSize = '3em';
@@ -24,9 +24,9 @@ var navPop = function(e) {
   }
 }
 var navPopReset = function(e) {
-  let nav = document.getElementById('nav-bar');
+  let nav = document.querySelector('.nav');
   let wiz = document.getElementById('wizard');
-  let links = Array.from(document.getElementsByClassName('nav-link'));
+  let links = Array.from(document.getElementsByClassName('nav__link'));
   if (links.includes(e.target)) {
     if (e.target == wiz && trip > 0) {
       e.target.style.fontSize = '2em';
@@ -46,9 +46,9 @@ addEventListener('blur', navPopReset, true);
 // invert colours on portfolio bar on mouseover
 var invert = function(e) {
 
-  let port = document.getElementById('portfolio-bar');
+  let port = document.querySelector('.portfolio');
   let cw = document.getElementById('codewars');
-  let links = Array.from(document.getElementsByClassName('portfolio-link'));
+  let links = Array.from(document.getElementsByClassName('portfolio__link'));
   if (links.includes(e.target)) {
     if (e.target == cw) {
       cw.setAttribute('src','./img/codewars-logo-black.png');
@@ -60,9 +60,9 @@ var invert = function(e) {
   }
 }
 var invertReset = function(e) {
-  let port = document.getElementById('portfolio-bar');
+  let port = document.querySelector('.portfolio');
   let cw = document.getElementById('codewars');
-  let links = Array.from(document.getElementsByClassName('portfolio-link'));
+  let links = Array.from(document.getElementsByClassName('portfolio__link'));
   if (links.includes(e.target)) {
     if (e.target == cw) {
       cw.setAttribute('src','./img/codewars-logo-gold.png');

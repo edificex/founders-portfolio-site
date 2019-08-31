@@ -18,39 +18,31 @@
 
 	<body>
 
-		<nav id="nav-bar" class="nav-bar">
-			<a tabindex="1" title="Home" class="nav-link">HOME</a>
-			<a tabindex="1" title="Who am I?" class="nav-link">WHO AM I?</a>
-			<a tabindex="1" title="Why apply?" class="nav-link">WHY APPLY?</a>
-			<a tabindex="1" title="Projects &amp Experiments"class="nav-link">PROJECTS &amp EXPERIMENTS</a>
-			<i tabindex="1" id="wizard" class="fas fa-hat-wizard nav-link" onclick="magicHat()"></i>
+		<!-- this just accounts for the actual navigation bar being outside flow -->
+		<div class="nav-box"></div>
+
+		<nav class="nav">
+			<a tabindex="1" title="Home" class="nav__link">HOME</a>
+			<a tabindex="1" title="Who am I?" class="nav__link">WHO AM I?</a>
+			<a tabindex="1" title="Why apply?" class="nav__link">WHY APPLY?</a>
+			<a tabindex="1" title="Projects &amp Experiments"class="nav__link">PROJECTS &amp EXPERIMENTS</a>
+			<i tabindex="1" id="wizard" class="fas fa-hat-wizard nav__link" onclick="magicHat()"></i>
 		</nav>
 
-		<div id="portfolio-bar" class="portfolio-bar">
+		<div class="portfolio">
 			<a title="freeCodeCamp profile" href="https://www.freecodecamp.org/plasticneuron">
-				<i tabindex="1" id="fcc" class="fab fa-free-code-camp portfolio-link"></i>
+				<i tabindex="1" class="fab fa-free-code-camp portfolio__link"></i>
 			</a>
-			<a title="Codewars profile" href="https://www.codewars.com/users/plasticneuron">
-				<img tabindex="1" id="codewars" class = "portfolio-link" src="./img/codewars-logo-gold.png" width="50px">
+			<a id="codewars" title="Codewars profile" href="https://www.codewars.com/users/plasticneuron">
+				<img tabindex="1" class = "portfolio__link" src="./img/codewars-logo-gold.png" width="50px">
 			</a>
 			<a title="GitHub profile" href="https://github.com/plasticneuron">
-				<i tabindex="1" id="github" class="fab fa-github portfolio-link"></i>
+				<i tabindex="1" class="fab fa-github portfolio__link"></i>
 			</a>
 			<a title="Email me" href="mailto:dangoss@posteo.net">
-				<i tabindex="1" id="email" class="fas fa-envelope portfolio-link"></i>
+				<i tabindex="1" class="fas fa-envelope portfolio__link"></i>
 			</a>
 		</div>
-
-		<!--<div name="home" class="home-container">-->
-			<main>
-				<h1>Hi I'm Dan Goss</h1>
-				<p>Short bio of me</p>
-				<h2>Why I'm applying to Founders & Coders</h2>
-				<h3>To Learn</h3>
-				<h3>To Collaborate and Co-operate</h3>
-				<h3>To Share</h3>
-			</main>
-		<!--</div>-->
 
 		<div class="slider">
       <div class="slider__shell">
@@ -75,6 +67,14 @@
       </div>
     </div>
 
+		<main>
+			<h1>Hi I'm Dan Goss</h1>
+			<p>Short bio of me</p>
+			<h2>Why I'm applying to Founders & Coders</h2>
+			<h3>To Learn</h3>
+			<h3>To Collaborate and Co-operate</h3>
+			<h3>To Share</h3>
+		</main>
 
 		<!--
 

@@ -1,6 +1,7 @@
 /* have attempted to write carousel stylesheet in BEM-consistent fashion */
 
 .slider {
+  padding: 20px 0;
   position: relative; /* set relative so descendants with position: absolute refer to overall container */
   height: 800px;
   width: 80%;
