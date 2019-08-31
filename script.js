@@ -87,3 +87,5 @@ var magicHat = function() {
   wiz.style.color = result;
   trip++;
 }
+
+// need a JS fix to account for fixed header by offsetting HTML anchors
