@@ -7,7 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="img-carousel.css">
 		<link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
-		<link rel="icon" href="favicon.ico">
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+		<link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/36593718b0.js"></script>
 		<script type = "text/javascript" async="async" src="script.js"></script>
 		<script type = "text/javascript" async="async" src="img-carousel.js"></script>
@@ -31,14 +32,14 @@
 		</nav>
 
 		<div class="portfolio">
+			<a tabindex="-1" title="GitHub profile" href="https://github.com/plasticneuron">
+				<i tabindex="1" class="fab fa-github portfolio__link"></i>
+			</a>
 			<a tabindex="-1" title="freeCodeCamp profile" href="https://www.freecodecamp.org/plasticneuron">
 				<i tabindex="1" class="fab fa-free-code-camp portfolio__link"></i>
 			</a>
 			<a tabindex="-1" title="Codewars profile" href="https://www.codewars.com/users/plasticneuron">
 				<img tabindex="1" id="codewars" class = "portfolio__link" src="img/codewars-logo-gold.png" width="50px">
-			</a>
-			<a tabindex="-1" title="GitHub profile" href="https://github.com/plasticneuron">
-				<i tabindex="1" class="fab fa-github portfolio__link"></i>
 			</a>
 			<a tabindex="-1" title="Email me: dangoss@posteo.net" href="mailto:dangoss@posteo.net">
 				<i tabindex="1" class="fas fa-envelope portfolio__link"></i>
@@ -68,47 +69,54 @@
       </div>
     </div>
 
-		<main id="bio">
-			<h1>Hi I'm Dan Goss</h1>
-			<p>Short bio of me</p>
+		<main class="main" id="bio">
+			<div class="main__text">
+				<h1 class="main__heading">Hi I'm Dan Goss</h1>
+				<p class="main__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat tristique mauris vestibulum efficitur. Aliquam sit amet volutpat ipsum. Aenean pulvinar ultrices purus non lacinia. Sed sodales justo sed risus euismod, at ultricies lorem cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales ipsum non est facilisis, ut convallis mi tincidunt. Suspendisse sodales dolor sed eros volutpat, non interdum diam dapibus. In maximus porta libero non mattis. Suspendisse varius quis tortor a tempor. Donec faucibus nulla eu gravida efficitur. Integer pretium sapien et velit placerat, non viverra mauris hendrerit. Nunc faucibus erat a ornare congue. Curabitur sem neque, varius ut ex sed, venenatis commodo arcu. Nulla egestas magna ligula, sit amet sollicitudin tellus vehicula at. e</p>
+			</div>
+			<img src="img/profile2.jpg" alt="My face" class="main__img">
 		</main>
 
-		<article id="motivation">
-			<h2>My motivation for applying to Founders & Coders</h2>
-			<h3>To Learn</h3>
-			<h3>To Co-operate, Reciprocate</h3>
-			<h3>To Build Resources for the Left</h3>
+		<article id="motivation" class="article">
+			<h2 class="article__heading">My motivation for applying to Founders & Coders</h2>
+			<p class="article__para"> I want to work with Founders because... </p>
+			<h3 class="article__heading">To Learn</h3>
+			<h3 class="article__heading">To Co-operate, Reciprocate</h3>
+			<h3 class="article__heading">To Build Resources for the Left</h3>
 		</article>
 
-		<article>
-			<h2>Infosecurity and data privacy</h2>
-			<h3>Festival workshops</h3>
-			<h3>The Glass Room</h3>
+		<article class="article">
+			<h2 class="article__heading">Infosecurity and data privacy</h2>
+			<h3 class="article__heading">Festival workshops</h3>
+			<h3 class="article__heading">The Glass Room</h3>
 		</article>
 
-		<article>
-			<h2>Union organising</h2>
-			<h3>IWW and the Castle</h3>
-			<h3>London Renters' Union</h3>
+		<article class="article">
+			<h2 class="article__heading">Union organising</h2>
+			<h3 class="article__heading">IWW and the Castle</h3>
+			<h3 class="article__heading">London Renters' Union</h3>
 		</article>
 
-		<article>
-			<h2>Environmental activism</h2>
-			<h3>Fossil Free campaigning, divestment and People & Planet</h3>
-			<h3>Fuel Poverty Action</h3>
+		<article class="article">
+			<h2 class="article__heading">Environmental activism</h2>
+			<h3 class="article__heading">Fossil Free campaigning, divestment and People & Planet</h3>
+			<h3 class="article__heading">Fuel Poverty Action</h3>
 		</article>
 
-		<article>
-			<h2>Climbing</h2>
+		<article class="article">
+			<h2 class="article__heading">Climbing</h2>
 		</article>
 
-		<article id="projects">
-			<h2>Projects &amp Experiments</h2>
+		<article class="article" id="projects">
+			<h2 class="article__heading">Projects &amp Experiments</h2>
 		</article>
 
-		<footer>
-			Licensing info etc.
-		</footer>
+		<div class="footer-box">
+			<footer class="footer">
+				<p class="footer__para">See the <a href="https://github.com/plasticneuron/plasticneuron.github.io">code for this page</a> on GitHub</p>
+				<p class="footer__para">Dan Goss 2019</p>
+			</footer>
+		</div>
 
 	</body>
 

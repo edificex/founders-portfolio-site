@@ -14,14 +14,14 @@
   width: 100%; /* make shell fill parent container */
   height: 100%;
   padding: 0;
-  border: 5px solid black;
+  border: 1px solid black;
   background: rgb(0, 0, 0, 0.25); /* set grey background in case images smaller than container */
 }
 
 .slider__button {
   position: absolute; /* buttons will be positioned relative to shell */
   font-size: 4em; /* style the font awesome arrows */
-  color: gold;
+  color: white;
   background-color: transparent; /* lose the <button> look */
   border: 0;
   height: 100%; /* make buttons fill container vertically */

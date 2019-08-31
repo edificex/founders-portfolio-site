@@ -1,12 +1,14 @@
 /* main style sheet for page */
 
   .background {
-    background: rgb(70, 130, 180, 0.8);
+    /* background: #262228; /* 'evening' */
+    /* background-color: #8FC33A; /* 'grass' */
+    background-color: #E9E7DA; /* 'daisy' */
   }
 
   .nav-box {
     height: 50px;
-    padding: 10px 0;
+    padding: 1em 0;
   }
 
   .sr-only {
@@ -34,16 +36,13 @@
     z-index: 100;
   }
 
-  .nav a {
-    text-decoration: none; /* remove underlining of nav links */
-  }
-
   .nav__link {
+    text-decoration: none; /* remove underlining of nav links */
     color: black;
     font-variant: small-caps;
     font-size: 1.75em; /* NB. 1em * 16 gives font-size in pixels, so 1.75em = 28px */
     font-weight: bold;
-    font-family: 'Nova Mono', monospace; /* use generic monospace if GFont 'Nova Mono' not supported */
+    font-family: 'Nova Mono', Courier, monospace; /* use Courier (or failing that generic monospace) if GFont's 'Nova Mono' not supported */
   }
 
   .portfolio {
@@ -51,7 +50,7 @@
     position: fixed;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: black;
     height: auto;
@@ -65,7 +64,83 @@
   }
 
   .portfolio__link {
-    font-size: 50px;
+    font-size: 3em;
     color: gold;
     padding: 5px;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: "text image";
+    grid-column-gap: 5em;
+    margin: 5% 2em 1em; /* main should be outside any landscape screen on page load */
+    padding: 2em 2em;
+    border: 1px solid black;
+    background-color: #AF473C; /* 'chilli' */
+  }
+
+  .main__text {
+    grid-area: "text";
+  }
+
+  .main__heading {
+    color: white;
+    font-family: 'Bungee', Helvetica, sans-serif;
+  }
+
+  .main__para {
+    color: white;
+    font-size: 1.5em;
+    font-family: 'GlacialIndifferenceRegular', Verdana, sans-serif;
+  }
+
+  .main__img {
+    grid-area: "image";
+    width: 100%;
+  }
+
+  .article {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 2em 2em; /* main should be outside any landscape screen on page load */
+    padding: 1em 2em;
+    border: 1px solid black;
+    background-color: #0375B4; /* 'starry night' */
+  }
+
+  .article__heading {
+    color: white;
+    font-family: 'Bungee', Helvetica, sans-serif;
+  }
+
+  .article__para {
+    color: white;
+    font-size: 1.5em;
+    font-family: 'GlacialIndifferenceRegular', Verdana, sans-serif;
+  }
+
+  .footer-box {
+    margin-top: 10em;
+    position: relative;
+  }
+
+  .footer {
+    position: absolute;
+    display: flex;
+    flex: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0,0,0,0.25);
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+
+  }
+
+  .footer__para {
+    font-size: 1.5em;
+    font-family: 'Nova Mono', Courier, monospace;
+    padding: 0 2em;
   }
