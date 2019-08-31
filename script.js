@@ -122,3 +122,9 @@ addEventListener('click',profileFlick);
 // addEventListener('mouseover',profileFlip);
 
 // make buttons in bio reveal appropriate article
+/* const articleButton = function(event) {
+  let buttons = [...document.querySelectorAll('.main__button')];
+  if buttons.includes(event.target) {
+
+  }
+} */
