@@ -89,3 +89,8 @@ const magicHat = function() {
 }
 
 // need a JS fix to account for fixed header by offsetting HTML anchors
+// line of attack: for any nav link clicked, use window.scrollBy to move up page
+/* const offset = function() {
+  let links = [...document.getElementsByClassName('nav__link')];
+  window.scrollBy(0,-50); // scrolls 60px (height of nav bar + 10) up screen
+} */
