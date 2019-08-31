@@ -88,9 +88,35 @@ const magicHat = function() {
   trip++;
 }
 
-// need a JS fix to account for fixed header by offsetting HTML anchors
+// need a JS fix to account for fixed header by offsetting HTML anchors (unfinished)
 // line of attack: for any nav link clicked, use window.scrollBy to move up page
 /* const offset = function() {
   let links = [...document.getElementsByClassName('nav__link')];
   window.scrollBy(0,-50); // scrolls 60px (height of nav bar + 10) up screen
 } */
+
+// show a different profile photo on click
+const profileFlick = function(event) {
+  let currentImage = document.querySelector('.main__img');
+  if (event.target == currentImage) {
+    let source = currentImage.src.split(""); // return array of characters in src
+    let n = source.length;
+    let i = parseInt(source[n-5]); // count back through .jpg to get i, then convert to integer
+    if (i == 5) { // loop back round
+      currentImage.setAttribute('src','img/profile1.jpg')
+    } else {
+      let k = i + 1;
+      let newSource = 'img/profile' + k + '.jpg';
+      currentImage.setAttribute('src',newSource);
+    }
+  }
+}
+// flip photo on mouseover (buggy)
+/* const profileFlip = function() {
+    let currentImage = document.querySelector('.main__img');
+    if (event.target == currentImage) {
+      currentImage.style.transform = "rotate(0.5turn)";
+  }
+} */
+addEventListener('click',profileFlick);
+// addEventListener('mouseover',profileFlip);
