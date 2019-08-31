@@ -1,5 +1,9 @@
 /* main style sheet for page */
 
+  .background {
+    background: rgb(70, 130, 180, 0.8);
+  }
+
   .nav-box {
     height: 5%;
   }
