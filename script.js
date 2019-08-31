@@ -9,7 +9,7 @@ let cent = () =>  Math.floor(Math.random() * 100);
 // e.g. wiz.style.color = hsl(degree(),cent()+'%',cent()+'%')
 
 // invert colours and change size of menu options on mouseover/focus
-var navPop = function(e) {
+const navPop = function(e) {
   let nav = document.querySelector('.nav');
   let wiz = document.getElementById('wizard');
   let links = Array.from(document.getElementsByClassName('nav__link'));
@@ -24,7 +24,7 @@ var navPop = function(e) {
     }
   }
 }
-var navPopReset = function(e) {
+const navPopReset = function(e) {
   let nav = document.querySelector('.nav');
   let wiz = document.getElementById('wizard');
   let links = Array.from(document.getElementsByClassName('nav__link'));
@@ -45,7 +45,7 @@ addEventListener('focus', navPop, true); // focus/blur do not bubble
 addEventListener('blur', navPopReset, true);
 
 // invert colours on portfolio bar on mouseover
-var invert = function(e) {
+const invert = function(e) {
   let port = document.querySelector('.portfolio');
   let cw = document.getElementById('codewars');
   let links = Array.from(document.getElementsByClassName('portfolio__link'));
@@ -59,7 +59,7 @@ var invert = function(e) {
     }
   }
 }
-var invertReset = function(e) {
+const invertReset = function(e) {
   let port = document.querySelector('.portfolio');
   let cw = document.getElementById('codewars');
   let links = Array.from(document.getElementsByClassName('portfolio__link'));
@@ -81,7 +81,7 @@ addEventListener('blur', invertReset, true);
 
 // make wizard hat change colour according to user input
 let trip = false; // global variable to feed into navPop functions
-var magicHat = function() {
+const magicHat = function() {
   let result = window.prompt("Choose a colour:", "HotPink");
   let wiz = document.getElementById('wizard');
   wiz.style.color = result;
