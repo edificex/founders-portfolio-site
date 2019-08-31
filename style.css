@@ -87,11 +87,12 @@
   .main {
     display: grid; /* using grid to separate text from image */
     grid-template-columns: 4fr 1fr;
-    grid-template-areas: "text slider";
+    grid-template-areas: "text image";
     grid-column-gap: 5em;
     margin: 5% 2em 1em; /* main should be outside any landscape screen on page load */
     padding: 2em 2em;
     border: 1px solid black;
+    border-radius: 20px;
     background-color: #AF473C; /* 'chilli' */
   }
 
@@ -117,9 +118,38 @@
     font-family: 'GlacialIndifferenceRegular', Verdana, sans-serif;
   }
 
-  .main__img {
+  .main__img-box {
     grid-area: "image";
-    width: 100%;
+    display: flex;
+    flex: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main__img {
+    height: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+
+  .main__button-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 0;
+  }
+
+  .main__button {
+    font-family: 'Bungee', Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: black;
+    background: gold;
+    border-radius: 10px;
+    padding: 1em 0.5em;
+  }
+
+  .main__button:hover {
+    background-color: black;
+    color: gold;
   }
 
   .article {
@@ -130,6 +160,7 @@
     margin: 2em 2em; /* main should be outside any landscape screen on page load */
     padding: 1em 2em;
     border: 1px solid black;
+    border-radius: 20px;
     background-color: #0375B4; /* 'starry night' */
   }
 
