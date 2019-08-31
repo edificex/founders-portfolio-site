@@ -1,6 +1,7 @@
 // general JS for page
 
-// testing an onload event on the body (alert!)
+// testing an onload event
+// addEventListener('load',function() {alert("Welcome :)")});
 
 // randomisers for hsl number generation
 let degree = () => Math.floor(Math.random() * 360);
@@ -45,13 +46,12 @@ addEventListener('blur', navPopReset, true);
 
 // invert colours on portfolio bar on mouseover
 var invert = function(e) {
-
   let port = document.querySelector('.portfolio');
   let cw = document.getElementById('codewars');
   let links = Array.from(document.getElementsByClassName('portfolio__link'));
   if (links.includes(e.target)) {
     if (e.target == cw) {
-      cw.setAttribute('src','./img/codewars-logo-black.png');
+      cw.setAttribute('src','img/codewars-logo-black.png');
       port.style.backgroundColor = "gold";
     } else {
       e.target.style.color = "black";
@@ -65,7 +65,7 @@ var invertReset = function(e) {
   let links = Array.from(document.getElementsByClassName('portfolio__link'));
   if (links.includes(e.target)) {
     if (e.target == cw) {
-      cw.setAttribute('src','./img/codewars-logo-gold.png');
+      cw.setAttribute('src','img/codewars-logo-gold.png');
       port.style.backgroundColor = "black";
     } else {
       e.target.style.color = "gold";

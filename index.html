@@ -18,7 +18,7 @@
 
 	<body>
 
-		<!-- this just accounts for the actual navigation bar being outside flow -->
+		<!-- this div just accounts for the navigation bar being outside flow -->
 		<div class="nav-box"></div>
 
 		<nav class="nav">
@@ -30,16 +30,16 @@
 		</nav>
 
 		<div class="portfolio">
-			<a title="freeCodeCamp profile" href="https://www.freecodecamp.org/plasticneuron">
+			<a tabindex="-1" title="freeCodeCamp profile" href="https://www.freecodecamp.org/plasticneuron">
 				<i tabindex="1" class="fab fa-free-code-camp portfolio__link"></i>
 			</a>
-			<a id="codewars" title="Codewars profile" href="https://www.codewars.com/users/plasticneuron">
-				<img tabindex="1" class = "portfolio__link" src="./img/codewars-logo-gold.png" width="50px">
+			<a tabindex="-1" title="Codewars profile" href="https://www.codewars.com/users/plasticneuron">
+				<img tabindex="1" id="codewars" class = "portfolio__link" src="img/codewars-logo-gold.png" width="50px">
 			</a>
-			<a title="GitHub profile" href="https://github.com/plasticneuron">
+			<a tabindex="-1" title="GitHub profile" href="https://github.com/plasticneuron">
 				<i tabindex="1" class="fab fa-github portfolio__link"></i>
 			</a>
-			<a title="Email me" href="mailto:dangoss@posteo.net">
+			<a tabindex="-1" title="Email me" href="mailto:dangoss@posteo.net">
 				<i tabindex="1" class="fas fa-envelope portfolio__link"></i>
 			</a>
 		</div>
