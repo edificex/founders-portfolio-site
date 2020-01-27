@@ -1,158 +1,123 @@
 <!-- HTML for main page -->
 
-<html >
+<html>
 
-	<head>
-		<title>Dan Goss: Portfolio for Founders &amp Coders Application - Winter 2019</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="img-carousel.css">
-		<link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
-		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
-		<link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
-		<script src="https://kit.fontawesome.com/36593718b0.js"></script>
-		<script type = "text/javascript" async="async" src="script.js"></script>
-		<script type = "text/javascript" async="async" src="img-carousel.js"></script>
-		<meta charset="UTF-8">
-		<meta name="keywords" content="HTML, CSS, JavaScript, Founders and Coders, Codewars, Dan Goss, portfolio, plasticneuron">
-		<meta name="author" content="Dan Goss">
-		<meta name="description" content="Dan's portfolio for applying to Founders and Coders' Winter cohort 2019">
-	</head>
+<head>
+	<title>Dan Goss: Portfolio for Founders &amp Coders Application - Winter 2019</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="img-carousel.css">
+	<link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/36593718b0.js"></script>
+	<script type="text/javascript" async="async" src="script.js"></script>
+	<script type="text/javascript" async="async" src="img-carousel.js"></script>
+	<meta charset="UTF-8">
+	<meta name="keywords"
+		content="HTML, CSS, JavaScript, Founders and Coders, Codewars, Dan Goss, portfolio, groupanimal">
+	<meta name="author" content="Dan Goss">
+	<meta name="description" content="Dan's portfolio for applying to Founders and Coders' Winter cohort 2019">
+</head>
 
-	<body class="background">
+<body class="background">
 
-		<!-- this div just accounts for the navigation bar being outside flow -->
-		<div id="home" class="nav-box"></div>
+	<!-- this div just accounts for the navigation bar being outside flow -->
+	<div id="home" class="nav-box"></div>
 
-		<!-- the main navigation bar -->
-		<nav class="nav">
-			<a tabindex="1" title="Home" class="nav__link" href="#home"><i class="fas fa-home"></i> Home</a>
-			<a tabindex="1" title="Who am I?" class="nav__link" href="#bio">Who am I?</a>
-			<a tabindex="1" title="Why apply?" class="nav__link" href="#motivation">Why apply?</a>
-			<!-- <a tabindex="1" title="Projects &amp experiments"class="nav__link" href="#projects">Projects &amp Experiments</a> -->
-			<i tabindex="1" id="wizard" class="fas fa-hat-wizard nav__link" onclick="magicHat()"></i>
-		</nav>
+	<!-- the main navigation bar -->
+	<nav class="nav">
+		<a tabindex="1" title="Home" class="nav__link" href="#home"><i class="fas fa-home"></i> Home</a>
+		<a tabindex="1" title="Who am I?" class="nav__link" href="#bio">Who am I?</a>
+		<a tabindex="1" title="Why apply?" class="nav__link" href="#motivation">Why apply?</a>
+		<!-- <a tabindex="1" title="Projects &amp experiments"class="nav__link" href="#projects">Projects &amp Experiments</a> -->
+		<i tabindex="1" id="wizard" class="fas fa-hat-wizard nav__link" onclick="magicHat()"></i>
+	</nav>
 
-		<!-- side bar containing links to essential profiles and to email me -->
-		<div class="portfolio">
-			<a tabindex="-1" title="my GitHub profile" target="_blank" href="https://github.com/plasticneuron">
-				<i tabindex="1" class="fab fa-github portfolio__link"></i>
-			</a>
-			<a tabindex="-1" title="my freeCodeCamp profile" target="_blank" href="https://www.freecodecamp.org/plasticneuron">
-				<i tabindex="1" class="fab fa-free-code-camp portfolio__link"></i>
-			</a>
-			<a tabindex="-1" title="my Codewars profile" target="_blank" href="https://www.codewars.com/users/plasticneuron">
-				<img tabindex="1" id="codewars" class = "portfolio__link" src="img/codewars-logo-gold.png" width="50px">
-			</a>
-			<a tabindex="-1" title="email me: dangoss@posteo.net" href="mailto:dangoss@posteo.net">
-				<i tabindex="1" class="fas fa-envelope portfolio__link"></i>
-			</a>
+	<!-- side bar containing links to essential profiles and to email me -->
+	<div class="portfolio">
+		<a tabindex="-1" title="my GitHub profile" target="_blank" href="https://github.com/groupanimal">
+			<i tabindex="1" class="fab fa-github portfolio__link"></i>
+		</a>
+		<a tabindex="-1" title="my freeCodeCamp profile" target="_blank"
+			href="https://www.freecodecamp.org/groupanimal">
+			<i tabindex="1" class="fab fa-free-code-camp portfolio__link"></i>
+		</a>
+		<a tabindex="-1" title="my Codewars profile" target="_blank" href="https://www.codewars.com/users/groupanimal">
+			<img tabindex="1" id="codewars" class="portfolio__link" src="img/codewars-logo-gold.png" width="50px">
+		</a>
+		<a tabindex="-1" title="email me: dangoss@posteo.net" href="mailto:dangoss@posteo.net">
+			<i tabindex="1" class="fas fa-envelope portfolio__link"></i>
+		</a>
+	</div>
+
+	<!-- the much feted image carousel -->
+	<div class="slider">
+		<div class="slider__shell">
+			<button class="fas fa-arrow-alt-circle-left slider__button slider__button--left"></button>
+			<ul class="slider__list">
+				<li class="slider__list-item">
+					<img src="img/img1.jpg" title="On a bench at Land's End" alt="On a bench at Land's End"
+						class="slider__img slider__img--active">
+				</li>
+				<li class="slider__list-item">
+					<img hidden src="img/img3.jpg" title="On a boat" alt="On a boat" class="slider__img">
+				</li>
+
+				<button class="fas fa-arrow-alt-circle-right slider__button slider__button--right"></button>
 		</div>
+		<div class="slider__nav">
+			<button class="slider__nav-btn slider__nav-btn--active"></button>
+			<button class="slider__nav-btn"></button>
+			<button class="slider__nav-btn"></button>
+			<button class="slider__nav-btn"></button>
+			<button class="slider__nav-btn"></button>
+		</div>
+	</div>
 
-		<!-- the much feted image carousel -->
-		<div class="slider">
-      <div class="slider__shell">
-        <button class="fas fa-arrow-alt-circle-left slider__button slider__button--left"></button>
-        <ul class="slider__list">
-          <li class="slider__list-item">
-            <img src="img/img1.jpg" title="On a bench at Land's End" alt="On a bench at Land's End" class="slider__img slider__img--active">
-          </li>
-          <li class="slider__list-item">
-            <img hidden src="img/img2.jpg" title="Meeting folks at the Centre for Environmental Concerns in Manila" alt="Meeting folks at the Centre for Environmental Concerns in Manila" class="slider__img">
-          </li>
-          <li class="slider__list-item">
-            <img hidden src="img/img3.jpg" title="On a boat with my partner" alt="On a boat with my partner" class="slider__img">
-          </li>
-					<li class="slider__list-item">
-						<img hidden src="img/img4.jpg" title="Mustonia, final fortress of the 90s anti-roads movement in Leyton" alt="Mustonia, final fortress of the 90s anti-roads movement in Leyton" class="slider__img">
-					</li>
-					<li class="slider__list-item">
-						<img hidden src="img/img5.jpg" title="Up Primrose Hill after taking the roads with Critical Mass" alt="Up Primrose Hill after taking the roads with Critical Mass" class="slider__img">
-					</li>
-        </ul>
-        <button class="fas fa-arrow-alt-circle-right slider__button slider__button--right"></button>
-      </div>
-      <div class="slider__nav">
-        <button class="slider__nav-btn slider__nav-btn--active"></button>
-        <button class="slider__nav-btn"></button>
-        <button class="slider__nav-btn"></button>
-				<button class="slider__nav-btn"></button>
-				<button class="slider__nav-btn"></button>
-      </div>
-    </div>
-
-		<!-- an introduction to me, myself and I -->
-		<main class="main" id="bio">
-			<div class="main__text"> <!-- this div is the firt column of the CSS grid -->
-				<h1 class="main__heading">Hi, my name is Dan</h1>
-				<p class="main__para">Listicles seem to be the height of fashion, so here are five fast facts about me:</p>
-				<ol class="main__list">
-					<li>I've been hanging around on this particular turtle for about 25 years</li>
-					<li>I grew up in east London, but have made my home for the past few years in Haringey, north London</li>
-					<li>I get coin by working as a receptionist at a rock climbing centre down Green Lanes</li>
-					<li>I like to read speculative sci-fi, play the drums, go to dance parties and tinker with tech</li>
-					<li>I've been involved in left wing political organising for many years and believe <em>another world is possible</em></li>
-				</ol>
-				<p class="main__para">So that's a quick rundown. If you'd like to know more about what I've been up to recently, just click a button!</p>
-				<p class="main__para">Or, skip straight to the next section to <a class="link" href="#motivation">find out why I'm applying</a>.</p>
-				<div class="main__button-box">
-					<button class="main__button">Infosecurity Work</button>
-					<button class="main__button">Organising</button>
-					<button class="main__button">Build Camp</button>
-					<button class="main__button">Legal Support</button>
-					<button class="main__button">Climbing</button>
-				</div>
+	<!-- an introduction to me, myself and I -->
+	<main class="main" id="bio">
+		<div class="main__text">
+			<!-- this div is the firt column of the CSS grid -->
+			<h1 class="main__heading">Hi, my name is Dan</h1>
+			<p class="main__para">Listicles seem to be the height of fashion, so here are five fast facts about me:</p>
+			<ol class="main__list">
+				<li>list items</li>
+			</ol>
+			<div class="main__button-box">
+				<button class="main__button">buttons</button>button>
 			</div>
-			<div class="main__img-box">
-				<img src="img/profile1.jpg" title="my face" alt="my face" class="main__img"> <!-- this img is the second column of the CSS grid -->
-			</div>
-		</main>
+		</div>
+		<div class="main__img-box">
+			<img src="img/profile1.jpg" title="my face" alt="my face" class="main__img">
+			<!-- this img is the second column of the CSS grid -->
+		</div>
+	</main>
 
-		<!-- why I want to do the Founders &amp Coders course -->
-		<article id="motivation" class="article">
-			<h2 class="article__heading">Motivation: Why I want to do the course</h2>
-			<h3 class="article__heading">To Learn</h3>
-			<p class="article__para">The main reason I am keen to do the Founders &amp Coders course this year, is to learn! I have been fiddling at the edges of the technological sphere for a long time, but have never moved past the point of keen amateur. What that has looked like thus far has mostly been motivated by political priority and sheer curiosity. For example, I have learnt a lot of obscure details about phone security, what tools we can use to communicate in an end-to-end encrypted fashion (e.g. Signal), and how to combat the various tech-monopolies that hoover up your data on the daily.</p>
-			<p class="article__para">What I have lacked at every stage though, is any kind of technical grounding. This is why I have been wanting to do a development bootcamp for several years now. I have umpteen bizarre ideas kicking around inside my head, and I can't tell which of them are feasible as individual projects, which would take a huge team years to produce, and which are just not going to happen. I want some more tools with which to bring my rogue imagination, and those of the people around me, to life. And judging by how much I have enjoyed working through the pre-requisites, I would love every minute of it.</p>
-			<h3 class="article__heading">To Co-Operate</h3>
-			<p class="article__para">Founders stuck out to me as the course to apply to because it seemed genuinely geared towards doing technological work for socially constructive ends. I also really like how it is organised - that everyone who does the course helps reproduce it for future coders. I have (somewhat trepidatiously) already started thinking about how much fun it would be to put my workshop planning and faciliation skills to use with cohorts down the line.</p>
-			<p class="article__para">Most importantly, I am really excited at the prospect of meeting lots of other folks who share some of this desire to use tech 'for good', or who want to play with these systems to see what cool stuff we can make them do. I love working with other people - although I've enjoyed coding alone at the terminal this past while, it is definitely alienating, and I only get to see the problem at hand one way! It's a slow and frustrating process compared to what I know is possible with a collectivised approach.</p>
-			<p class="article__para">Also, let's be honest, who can afford one of these corporate pipeline bootcamps...</p>
-			<h3 class="article__heading">To Build Tools for Struggle</h3>
-			<p class="article__para">I read often and avidly about advances in AI, machine learning and their applications. It's very interesting but it's also a painful process. You end up wincing constantly at how effectively capitalism is mobilising exciting new technologies for reactionary purposes. Apps that discipline courier workers for a late drop, algorithms trained on the historic data amassed by racist institutions used to decide bail conditions, the generalisation of facial recognition by law enforcement. The list goes on.</p>
-			<p class="article__para">The real nub of all this is that for every horror, you can imagine a hundred emancipatory possiblities - but apparently these aren't profitable options. For example, where are the platforms that help you organise your workplace, or successfully navigate asylum claims or the hostile environment? In summary, I want to level up my skills so I can better contribute to the proliferation of these kinds of systems, and to better resist the wielding of technological innovation against 99% of people.</p>
-			<h3 class="article__heading">To make money</h3>
-			<p class="article__para">It remains the case that in order to pay rent and buy food I have to work. It is also true that I find coding immensely more satisfying and mentally sustainable than customer service, and would love to be able to survive (and maybe even thrive!) by finding work in this field.</p>
-		</article>
+	<!-- why I want to do the Founders &amp Coders course -->
+	<article id="motivation" class="article">
+		<h2 class="article__heading">Motivation: Why I want to do the course</h2>
+		<h3 class="article__heading">Some headings</h3>
+		<p class="article__para">Some text</p>
 
-		<article class="article" hidden>
-			<h2 class="article__heading">Infosecurity Work</h2>
-			<h3 class="article__heading">Festival workshops</h3>
-			<h3 class="article__heading">The Glass Room</h3>
-		</article>
+	</article>
 
-		<article class="article" hidden>
-			<h2 class="article__heading">Organising</h2>
-			<h3 class="article__heading">IWW and the Castle</h3>
-			<h3 class="article__heading">Fossil Free campaigning, divestment and People & Planet</h3>
-			<h3 class="article__heading">Fuel Poverty Action</h3>
-		</article>
+	<article class="article" hidden>
+		<h2 class="article__heading">Climbing</h2>
+	</article>
 
-		<article class="article" hidden>
-			<h2 class="article__heading">Climbing</h2>
-		</article>
-
-		<!-- <article class="article" id="projects" hidden>
+	<!-- <article class="article" id="projects" hidden>
 			<h2 class="article__heading">Projects &amp Experiments</h2>
 		</article> -->
 
-		<div class="footer-box">
-			<footer class="footer">
-				<p class="footer__para">See the <a target="_blank" class="link" href="https://github.com/plasticneuron/plasticneuron.github.io">code for this page</a> on GitHub</p>
-				<i class="fas fa-infinity"></i>
-				<p class="footer__para">Dan Goss 2019</p>
-			</footer>
-		</div>
+	<div class="footer-box">
+		<footer class="footer">
+			<p class="footer__para">See the <a target="_blank" class="link"
+					href="https://github.com/groupanimal/groupanimal.github.io">code for this page</a> on GitHub</p>
+			<i class="fas fa-infinity"></i>
+			<p class="footer__para">Dan Goss 2019</p>
+		</footer>
+	</div>
 
-	</body>
+</body>
 
 </html>
